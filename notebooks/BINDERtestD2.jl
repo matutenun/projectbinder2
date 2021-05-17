@@ -17,13 +17,7 @@ end
 begin
 
     import Pkg
-    Pkg.activate(mktempdir())
-    Pkg.add([
-       Pkg.PackageSpec(name="DifferentialEquations", version="6"),
-       Pkg.PackageSpec(name="PlutoUI", version="0.7")
-   ])
-   #       Pkg.PackageSpec(name="Plots", version="1"),
-    Pkg.add("StatsPlots")
+    
     using LinearAlgebra, DifferentialEquations, StatsPlots, PlutoUI
 end
 
